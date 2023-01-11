@@ -1,0 +1,26 @@
+.player-control {
+  border: none;
+  padding: 0.5rem;
+  background: none;
+  color: var(--gray10);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.player {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1rem;
+  /* margin-block-start: 5rem; */
+  box-shadow: inset 0 1px 0 var(--gray30);
+  /*sombra interna ejeX ejeY expande color*/ /*puede reemplazar al borde, pero sin agregar o quitar pixeles*/
+}
+
+.player > * {
+  flex: 1;
+}
+
+.player-playerVolume {
+  display: flex;
+  justify-content: flex-end;
+}

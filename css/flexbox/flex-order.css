@@ -1,0 +1,22 @@
+.flexOrder {
+  display: flex;
+  gap: 5rem; /*define el espacio entre items flex*/
+}
+
+.flexOrder img {
+  border-radius: 50%;
+}
+
+/*
+.flexOrder:nth-child(even) p {
+  order: 1;
+}
+
+.flexOrder:nth-child(even) img {
+  order: 2;
+}
+*/
+/*even=impares  odd=pares*/
+.flexOrder:nth-child(even) p {
+  order: -1;
+}

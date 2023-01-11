@@ -1,0 +1,55 @@
+.flex {
+  display: flex;
+  background: lightgray;
+}
+
+/* 
+.flex > * {
+  //para todo elemento que está dentro de la caja .flex //
+
+  border: 1px solid yellowgreen !important;
+   flex-grow: ; //cuanto crece valor entre 0 y 1
+  flex-shrink: ;  //cuanto disminuye entre 0 y 1
+  flex-basis: ;  //valor básico, de donde parte, tamaño por default 
+  flex-grow: 2;
+  flex-basis: auto; //default 
+  flex-basis: 100px;
+  padding: 1rem !important;
+}
+
+.flex > p {
+  flex-grow: 1;
+  border: 1px solid salmon !important;
+  flex-basis: 50px;
+}
+//
+cuando el factor crecimiento es igual para todos los elementos, basta solo con 
+restar del contenedor total la cantidad ocupada y dividirlo entre el numero de elementos,
+esa cantidad es la que sumariamos a su flex-basic de cada uno de los elementos.
+//
+//
+cuando el factor crecimiento es diferente, se tiene que restar tambien el padding y los bordes totales 
+al tamaño del contenedor total(1024-250-16*6-6), y la división será entre la suma total del número de crecimiento de
+los items (2+2+1=5, en el ejemplo), luego esa cantidad resultante multiplicar por el 
+factor crecimiento de cada items para calcular lo q le corresponde sumar a su flex-basic, más su padding y borde del item.
+((1024-250-16*6-6)/5)*2 + 100 + 32 + 2
+// 
+*/
+.flex > img {
+  inline-size: 400px;
+  flex-shrink: 0;
+}
+
+.flex > div {
+  border: 1px solid red;
+  /* flex-grow: 1;
+  flex-basis: 0%; los dos funcionan en conjunto
+  */
+  /* flex-basis: 100%; //esto trabaja similar a los dos juntos anteriores*/
+  flex: 1; /* aquí trabajan los 3:
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  */
+  /*En resumen, son tres formas de como se puede ocupar todo el contenedor*/
+}

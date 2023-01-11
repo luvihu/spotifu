@@ -1,0 +1,37 @@
+.search {
+  position: relative;
+  flex: 1; /*por más que crece el form, el input mantiene el ancho máx por las
+  caracteristicas que le dimos*/
+}
+
+.search i {
+  position: absolute;
+  font-size: 1rem;
+  block-size: 1rem;
+  left: 0.5rem;
+  top: calc(50% - 0.5rem);
+  /*es una forma de darle un tamaño proporcional al ícono
+  así cambien el tamaño de la fuente padre (root) del navegador a usar,
+  50% de la altura del input (contenedor de referencia) menos el tamaño del ícono*/
+  color: var(--gray10);
+}
+/*El form no tiene los seudoelementos after y before*/
+
+.search input {
+  font: var(--baseFont);
+  color: var(--gray30);
+  border-radius: 1.25rem;
+  border: none;
+  max-inline-size: 22rem;
+  width: 100%;
+  padding: 0.5rem;
+  padding-inline-start: 2rem;
+}
+
+.search:focus-within i {
+  color: var(--gray30);
+}
+
+.search input::-webkit-input-placeholder {
+  color: var(--gray10);
+}

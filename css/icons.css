@@ -1,0 +1,116 @@
+/* [class^="icon-"],
+[class*=" icon-"] {
+  inline-size: 50px;
+  block-size: 50px;
+  background-size: cover;
+  display: inline-block;
+}
+
+.icon-home {
+  background-image: url("../icons/home.svg");
+} */
+
+@font-face {
+  font-family: "icomoon";
+  src: url("../font-icons/fonts/icomoon.eot?vucoba");
+  src: url("../font-icons/fonts/icomoon.eot?vucoba#iefix")
+      format("embedded-opentype"),
+    url("../font-icons/fonts/icomoon.ttf?vucoba") format("truetype"),
+    url("../font-icons/fonts/icomoon.woff?vucoba") format("woff"),
+    url("../font-icons/fonts/icomoon.svg?vucoba#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-heart:before {
+  content: "\e918";
+}
+.icon-addPlus:before {
+  content: "\e900";
+}
+.icon-arrowLeft:before {
+  content: "\e901";
+}
+.icon-arrowRight:before {
+  content: "\e902";
+}
+.icon-calendar:before {
+  content: "\e903";
+}
+.icon-clock:before {
+  content: "\e904";
+}
+.icon-close:before {
+  content: "\e905";
+}
+.icon-creditCard:before {
+  content: "\e906";
+}
+.icon-download:before {
+  content: "\e907";
+}
+.icon-home:before {
+  content: "\e908";
+}
+.icon-homeActive:before {
+  content: "\e909";
+}
+.icon-library:before {
+  content: "\e90a";
+}
+.icon-libraryActive:before {
+  content: "\e90b";
+}
+.icon-music:before {
+  content: "\e90c";
+}
+.icon-next:before {
+  content: "\e90d";
+}
+.icon-pause:before {
+  content: "\e90e";
+}
+.icon-play:before {
+  content: "\e90f";
+}
+.icon-prev:before {
+  content: "\e910";
+}
+.icon-round:before {
+  content: "\e911";
+}
+.icon-search:before {
+  content: "\e912";
+}
+.icon-searchActive:before {
+  content: "\e913";
+}
+.icon-Vector:before {
+  content: "\e914";
+}
+.icon-volumeDown:before {
+  content: "\e915";
+}
+.icon-volumeOff:before {
+  content: "\e916";
+}
+.icon-volumeUp:before {
+  content: "\e917";
+}

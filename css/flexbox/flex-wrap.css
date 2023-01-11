@@ -1,0 +1,8 @@
+.flexWrap {
+  display: flex;
+  overflow: auto;
+  /* flex-wrap: wrap;
+  flex-direction: row-reverse;
+  flex-wrap: wrap-reverse; */
+  flex-flow: row-reverse wrap-reverse; /*es el shorthand de flex-direction y flex-wrap */
+}

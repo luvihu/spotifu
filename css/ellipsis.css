@@ -1,0 +1,10 @@
+.ellipsis {
+  overflow: hidden; /*est lo coloco como soporte para poder usar este componente ellipsis en otra parte y funcione, no solo en las "li"*/
+}
+
+.ellipsis > * {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

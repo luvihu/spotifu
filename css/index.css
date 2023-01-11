@@ -1,0 +1,54 @@
+@import "./icons.css";
+@import "./fonts.css";
+@import "./body.css";
+@import "./link.css";
+@import "./button-icon.css";
+@import "./sidebar.css";
+@import "./ellipsis.css";
+@import "./slider.css";
+@import "./player_controls.css";
+@import "./player_playback.css";
+@import "./player_volume.css";
+@import "./player.css";
+@import "./now-playing.css";
+@import "./playlist_a.css";
+@import "./playlist_b.css";
+@import "./playlist_list.css";
+@import "./search.css";
+@import "./navigation.css";
+@import "./header.css";
+@import "./sticky.css";
+@import "./page.css";
+@import "./layout.css";
+@import "./scrollbar.css";
+
+:root {
+  font-size: 14px;
+  --primary: #00b050;
+  --white: #ffffff;
+  --gray10: #b3b3b3;
+  --gray20: #737373;
+  --gray30: #282828;
+  --gray40: #181818;
+  --gray50: #121212;
+  --gray60: #000000;
+  --basefontFamily: Avenir, Helvetica, sans-serif;
+  --headLine1: bold 2rem / normal var(--basefontFamily); /*font-weight font-size/line-height font family*/ /*Normal es el 1.2 del tamaño de la fuente*/
+  --headLine2: bold 1.5rem /1.75rem var(--basefontFamily);
+  --baseFont: normal 0.875rem /1.375rem var(--basefontFamily);
+  --baseFontBold: bold 0.875rem /1.375rem var(--basefontFamily);
+  --button: bold 0.875rem /1rem var(--basefontFamily);
+  --small: normal 0.75em / normal var(--basefontFamily); /*0.75 del padre=2rem*/
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1367px) {
+  :root {
+    font-size: 18px;
+  }
+}

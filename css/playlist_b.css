@@ -1,0 +1,55 @@
+.playlistB {
+  display: flex;
+  inline-size: 17.5rem; /*280px*/
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.1);
+  transition: 0.3s background;
+}
+
+.playlistB:hover,
+.playlistB:focus-within {
+  background: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+
+.playlistB-details {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  gap: 0.5rem;
+}
+/*
+Pienso que en la .playlistB-details debería 
+llevar un flex: 1; justify-content: space-between; 
+para que el botón al hacer hover quede justo a la Derecha 
+respetando su espacio (entre el texto "nombre de la canción" y el botón), 
+ya que si la canción contiene solo 4 letras el botón se pegaría a su izquierda 
+solo con un gap de .5 rem lo que haría que el botón no se vea igual para todas 
+las PlayList. Ya que si solo contienen 4 letras no respetaría su espacio. 
+Estuve observando ese comportamiento cuando quise llenar los nombres de las 
+canciones que quería que se viesen y contenían 4 letras, mientras que para las 
+que contenían mas letras se veía posicionado bien al hacer hover.
+*/
+
+.playlistB-cover img {
+  vertical-align: middle;
+  inline-size: 4.75rem;
+  block-size: 4.75rem;
+}
+
+.playlistB-title {
+  font: var(--baseFontBold);
+  color: var(--white);
+  margin: 0; /*tiene un margen por defecto pr ser un h3*/
+}
+
+.playlistB-control {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.playlistB:hover .playlistB-control,
+.playlistB:focus-within .playlistB-control {
+  opacity: 1;
+}

@@ -1,0 +1,79 @@
+.playlistA {
+  /* border: 1px solid red; */
+  padding: 1rem;
+  background: var(--gray40);
+  inline-size: 13em; /*182px/14=13 estamos tomando la fuente base, 1em=14*/
+  border-radius: 0.25rem;
+  box-sizing: border-box;
+  transition: 0.3s background;
+}
+
+/*
+.playlistA:hover {
+  cursor: pointer;
+  background: var(--gray30);
+}
+
+.playlistA:hover .playlistA-cover button {
+  // display: block; //
+  opacity: 1;  //en este caso prefiero usar opacity//
+  transform: translate(0);  //para q este en su estado natural //
+}
+
+*/
+
+/* Trabajo lo mismo con FOCUS-WHITHIN
+:focus-within representa un elemento que ha recibido el foco o que 
+contiene un elemento que ha recibido el foco.
+*/
+
+.playlistA:hover,
+.playlistA:focus-within {
+  cursor: pointer;
+  background: var(--gray30);
+}
+
+.playlistA:hover .playlistA-cover button,
+.playlistA:focus-within .playlistA-cover button {
+  /* display: block; */
+  opacity: 1; /*en este caso prefiero usar opacity*/
+  transform: translate(0); /*para q este en su estado natural*/
+}
+
+.playlistA button {
+  position: absolute;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  /* display: none; */ /*en este caso prefiero usar opacity*/
+  opacity: 0;
+  will-change: opacity, transform;
+  transform: translateY(0.5rem);
+  transition: 0.3s opacity, 0.3s transform;
+}
+
+/*will-change avisará al navegador que algo pasará con esos elementos. Anticipa el movimiento que ocurrirá y eso es bueno tanto para rendimiento como de cara a Google respecto a tu página */
+
+.playlistA-cover {
+  position: relative;
+  border-radius: 0.75rem;
+  overflow: hidden; /*para q no se desborde el border-radius: 0.75rem y se vea;*/
+  margin-block-end: 1rem;
+}
+
+.playlistA-cover img {
+  vertical-align: middle;
+  inline-size: 100%;
+  block-size: auto;
+}
+
+.playlistA-title {
+  font: var(--baseFontBold);
+  color: var(--white);
+  margin: 0;
+}
+
+.playlistA-description {
+  font: var(--baseFont);
+  color: var(--gray10);
+  margin: 0;
+}
