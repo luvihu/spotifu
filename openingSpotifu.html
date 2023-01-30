@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotifu</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/openingSpotifu.css" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./favicons/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./favicons/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./favicons/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./favicons/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./favicons/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./favicons/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./favicons/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./favicons/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicons/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./favicons/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./favicons/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta property="og:title" content="Curso de Flexbox-Layout y Componentes" />
+    <meta property="og:type" content="Website" />
+    <meta
+      property="og:description"
+      content="Todo lo necesario para crear un buen contenido en la Website"
+    />
+    <meta
+      property="og:url"
+      content="https://luvihu.github.io/curso-flexbox-layout-componentes/"
+    />
+    <meta
+      property="og:image"
+      content="https://educacion30.b-cdn.net/wp-content/uploads/2019/10/music.jpg"
+    />
+  </head>
+  <body class="body">
+    <div class="layout">
+      <div class="layout-block">
+        <div class="layout-sidebar">
+          <div class="sidebar">
+            <header class="logo" role="banner">
+              <a href="/" aria-current="page">
+                <!--colocar la img dentro de <a></a> para q la img sirva como link, el href="/" indica que nos va devolver hacia pantalla inicial ó raíz-->
+                <img
+                  src="./images/spotifu-logo.png"
+                  class="logo-image"
+                  width="112"
+                  height="32"
+                  alt="Logo de Spotifu"
+                />
+              </a>
+            </header>
+            <nav class="menu" aria-label="Principal">
+              <ul class="menu-list">
+                <li class="menuItem is-active">
+                  <a href="/" class="link" aria-current="page">
+                    <i class="icon-home" aria-hidden="true"></i>
+                    <span>Inicio</span>
+                  </a>
+                </li>
+                <li class="menuItem">
+                  <a href="searchSpotifu.html" class="link">
+                    <i class="icon-search" aria-hidden="true"></i>
+                    <span>Buscar</span>
+                  </a>
+                </li>
+                <li class="menuItem">
+                  <a href="listenedSpotifu.html" class="link">
+                    <i class="icon-creditCard" aria-hidden="true"></i>
+                    <span>Premium</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <nav class="list" aria-labelledby="library-navigation">
+              <h2 class="list-title" id="library-navigation">Tu Biblioteca</h2>
+              <ul class="list-content">
+                <li class="list-item">
+                  <span class="ellipsis">
+                    <a href="#" class="link">Creada para ti</a>
+                  </span>
+                </li>
+                <li class="list-item">
+                  <span class="ellipsis">
+                    <a href="#" class="link">Escuchado recientemente</a>
+                  </span>
+                </li>
+                <li class="list-item">
+                  <span class="ellipsis">
+                    <a href="#" class="link">Tus Me Gusta</a>
+                  </span>
+                </li>
+              </ul>
+            </nav>
+            <nav class="list" aria-labelledby="playlist-navigation">
+              <h2 class="list-title" id="playlist-navigation">Playlists</h2>
+              <ul class="list-content">
+                <li class="list-item">
+                  <span class="ellipsis">
+                    <a href="./openingSpotifu.html" class="link"
+                      >Demon Slayer: Kimetsu no Yaiba 鬼滅の刃 Anime Soundtrack
+                      OST / OPENING Gurenge 紅蓮華 ...</a
+                    >
+                  </span>
+                </li>
+                <li class="list-item">
+                  <span class="ellipsis">
+                    <a href="#" class="link">Naruto al 100%</a>
+                  </span>
+                </li>
+                <li class="list-item">
+                  <span class="ellipsis">
+                    <a href="#" class="link">Para cantar en la ducha</a>
+                  </span>
+                </li>
+                <li class="list-item">
+                  <span class="ellipsis">
+                    <a href="#" class="link">Sin parar</a>
+                  </span>
+                </li>
+                <li class="list-item">
+                  <span class="ellipsis">
+                    <a href="#" class="link">Naruto openings</a>
+                  </span>
+                </li>
+                <li class="list-item">
+                  <span class="ellipsis">
+                    <a href="#" class="link">Boku no pico</a>
+                  </span>
+                </li>
+                <li class="list-item">
+                  <span class="ellipsis">
+                    <a href="#" class="link">This is Pokémon</a>
+                  </span>
+                </li>
+                <li class="list-item">
+                  <span class="ellipsis">
+                    <a href="#" class="link"
+                      >Más populares de la semana para tí que eres una pro</a
+                    >
+                  </span>
+                </li>
+                <li class="list-item">
+                  <span class="ellipsis">
+                    <a href="#" class="link">Mis pistas de shazam</a>
+                  </span>
+                </li>
+                <li class="list-item">
+                  <span class="ellipsis">
+                    <a href="#" class="link">Audio Library</a>
+                  </span>
+                </li>
+                <li class="list-item">
+                  <span class="ellipsis">
+                    <a href="#" class="link">Amor y otras</a>
+                  </span>
+                </li>
+                <li class="list-item">
+                  <span class="ellipsis">
+                    <a href="#" class="link">Latin</a>
+                  </span>
+                </li>
+                <li class="list-item">
+                  <span class="ellipsis">
+                    <a href="#" class="link">Pokemon</a>
+                  </span>
+                </li>
+                <li class="list-item">
+                  <span class="ellipsis">
+                    <a href="#" class="link">Para cantar</a>
+                  </span>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="layout-main">
+          <div class="searchSpotifu-opening">
+            <div class="sticky">
+              <div class="page-block">
+                <header
+                  class="header"
+                  aria-label="Barra superior y menú del usuario"
+                >
+                  <div class="navigation">
+                    <button
+                      class="navigation-prev"
+                      aria-label="Volver"
+                      title="Volver"
+                    >
+                      <i class="icon-arrowLeft" aria-hidden="true"></i>
+                    </button>
+                    <button
+                      class="navigation-next"
+                      disabled
+                      aria-label="Avanzar"
+                      title="Avanzar"
+                    >
+                      <i class="icon-arrowRight" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <form
+                    class="search"
+                    role="search"
+                    aria-label="Buscar por artistas, canciones ó podcast"
+                  >
+                    <i class="icon-search" aria-hidden="true"></i>
+                    <input
+                      type="search"
+                      placeholder="Buscar por artistas, canciones ó podcast"
+                    />
+                  </form>
+                </header>
+              </div>
+            </div>
+            <div class="searchSpotifu-component">
+              <img
+                src="./images/demonSlayer.jpg"
+                width="232"
+                height="232"
+                alt="Demon-Slayer"
+              />
+              <div class="searchSpotifu-component1">
+                <span class="searchSpotifu-componentT">PLAYLIST</span>
+                <span class="searchSpotifu-componentS"
+                  >Demon Slayer: Kimetsu no Yaiba 鬼滅の刃 Anime Soundtrack OST
+                  / OPENING Gurenge 紅蓮華 ...</span
+                >
+                <span class="searchSpotifu-componentT"
+                  >"Kamado Tanjiro no Uta / 竈門炭治郎のうた", "Homura / 炎 (
+                  ほむら )"</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="searchSpotifu-filterTop">
+            <div class="searchSpotifu-control">
+              <button
+                class="buttonIconSpotifu is-primary"
+                title="Demon Slayer/OPENING Gurenge"
+                aria-label="Reproducir Demon Slayer/OPENING Gurenge"
+              >
+                <i class="icon-play" aria-hidden="true"></i>
+              </button>
+            </div>
+            <div class="searchSpotifu-rowTop">
+              <div class="searchSpotifu-top1H3">
+                <h3 class="top1Cat">#</h3>
+                <h3 class="top1Titulo">TÍTULO</h3>
+                <h3 class="top1Album">ÁLBUM</h3>
+                <h3 class="top1Agregado">AGREGADO EL</h3>
+                <h2><i class="icon-clock" aria-hidden="true"></i></h2>
+              </div>
+            </div>
+            <div class="searchSpotifu-rowToptrack">
+              <div class="searchSpotifu-top4H3">
+                <h3>1</h3>
+              </div>
+              <div class="searchSpotifu-top5Image">
+                <img
+                  src="./images/homura.jpg"
+                  width="40"
+                  height="40"
+                  alt="Homura-Lisa"
+                />
+                <div class="searchSpotifu-top5T">
+                  <h3>Homura</h3>
+                  <h3>Lisa</h3>
+                </div>
+              </div>
+              <div class="searchSpotifu-top5H3">
+                <h3 class="gurengeH3">Gurenge</h3>
+                <h3 class="dateH3">03 de jul. de 2022</h3>
+                <h3 class="timeH3">3:25</h3>
+              </div>
+            </div>
+            <div class="searchSpotifu-rowToptrack">
+              <div class="searchSpotifu-top4H3">
+                <h3>2</h3>
+              </div>
+              <div class="searchSpotifu-top5Image">
+                <img
+                  src="./images/from-the-edge.jpg"
+                  width="40"
+                  height="40"
+                  alt="From the edge-Lisa"
+                />
+                <div class="searchSpotifu-top5T">
+                  <h3>From the edge</h3>
+                  <h3>Lisa</h3>
+                </div>
+              </div>
+              <div class="searchSpotifu-top5H3">
+                <h3 class="gurengeH3">Gurenge</h3>
+                <h3 class="dateH3">15 de ago. de 2022</h3>
+                <h3 class="timeH3">5:10</h3>
+              </div>
+            </div>
+            <div class="searchSpotifu-rowToptrack">
+              <div class="searchSpotifu-top4H3">
+                <h3>3</h3>
+              </div>
+              <div class="searchSpotifu-top5Image">
+                <img
+                  src="./images/akeboshi.jpg"
+                  width="40"
+                  height="40"
+                  alt="Akeboshi-Lisa"
+                />
+                <div class="searchSpotifu-top5T">
+                  <h3>Akeboshi</h3>
+                  <h3>Lisa</h3>
+                </div>
+              </div>
+              <div class="searchSpotifu-top5H3">
+                <h3 class="gurengeH3">Gurenge</h3>
+                <h3 class="dateH3">23 de set. de 2022</h3>
+                <h3 class="timeH3">8:05</h3>
+              </div>
+            </div>
+            <div class="searchSpotifu-rowToptrack">
+              <div class="searchSpotifu-top4H3">
+                <h3>4</h3>
+              </div>
+              <div class="searchSpotifu-top5Image">
+                <img
+                  src="./images/shirogane.jpg"
+                  width="40"
+                  height="40"
+                  alt="Shirogane-Lisa"
+                />
+                <div class="searchSpotifu-top5T">
+                  <h3>Shirogane</h3>
+                  <h3>Lisa</h3>
+                </div>
+              </div>
+              <div class="searchSpotifu-top5H3">
+                <h3 class="gurengeH3">Gurenge</h3>
+                <h3 class="dateH3">12 de oct. de 2022</h3>
+                <h3 class="timeH3">3:18</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="layout-block">
+        <footer class="layout-bottom">
+          <div class="player">
+            <div class="player-nowPlaying">
+              <div class="nowPlaying">
+                <div class="nowPlaying-cover">
+                  <img
+                    src="./images/luisM.jpg"
+                    width="56"
+                    height="56"
+                    alt="Portada de Grandes Éxitos"
+                    title="Portada de Grandes Éxitos, Inolvidable, Luis Miguel"
+                  />
+                </div>
+
+                <div class="nowPlaying-details">
+                  <div class="nowPlaying-description">
+                    <a href="#song" class="nowPlaying-title">Grandes Éxitos</a>
+                    <a href="#artista" class="nowPlaying-artist"
+                      >Inolvidable, Luis Miguel</a
+                    >
+                  </div>
+                  <div class="nowPlaying-actions">
+                    <button
+                      class="player-control"
+                      role="switch"
+                      aria-checked="false"
+                      aria-label="Guardar en tu biblioteca"
+                      title="Guardar en tu biblioteca"
+                    >
+                      <i class="icon-heart" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="player-playerControls">
+              <div class="playerControls">
+                <div
+                  class="playerControls-buttons"
+                  aria-label="Controles de reproduccion"
+                >
+                  <button
+                    class="buttonIcon"
+                    aria-label="Anterior"
+                    title="Anterior"
+                  >
+                    <i class="icon-prev" aria-hidden="true"></i>
+                  </button>
+                  <button
+                    class="buttonIcon is-white"
+                    aria-label="Reproducir"
+                    title="Reproducir"
+                  >
+                    <i class="icon-play" aria-hidden="true"></i>
+                  </button>
+                  <button
+                    class="buttonIcon"
+                    aria-label="Siguiente"
+                    title="Siguiente"
+                  >
+                    <i class="icon-next" aria-hidden="true"></i>
+                  </button>
+                </div>
+                <div class="playerPlayback">
+                  <span class="playerPlayback-progressTime">01:40</span>
+                  <div class="playerPlayback-slider">
+                    <div class="slider">
+                      <div class="slider-progress">
+                        <button
+                          class="slider-button"
+                          aria-label="Controlar el progreso de la reproducción"
+                        ></button>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="playerPlayback-progressTime">01:40</span>
+                </div>
+              </div>
+            </div>
+            <div class="player-playerVolume">
+              <div class="playerVolume">
+                <button
+                  class="player-control"
+                  aria-label="Silenciar"
+                  aria-describedby="volumen-icon"
+                >
+                  <i
+                    class="icon-volumeUp"
+                    id="volumen-icon"
+                    role="presentacion"
+                    aria-label="Volumen alto"
+                  ></i>
+                </button>
+                <div class="playerVolume-slider">
+                  <div class="slider">
+                    <div class="slider-progress">
+                      <button
+                        class="slider-button"
+                        aria-label="Controlar el progreso de la reproducción"
+                      ></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
