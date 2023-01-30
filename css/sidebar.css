@@ -1,7 +1,3 @@
-@import "./logo.css";
-@import "./list.css";
-@import "./menu.css";
-
 .sidebar {
   background: var(--gray60);
   display: flex;

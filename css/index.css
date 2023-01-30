@@ -21,6 +21,9 @@
 @import "./page.css";
 @import "./layout.css";
 @import "./scrollbar.css";
+@import "./logo.css";
+@import "./list.css";
+@import "./menu.css";
 
 :root {
   font-size: 14px;

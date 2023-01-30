@@ -1,0 +1,240 @@
+.header {
+  margin-block-end: 1rem;
+  margin-inline-start: 1rem;
+  margin-inline-end: 1rem;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.page-block {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.searchSpotifu {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  /* padding: 0 0 1rem 0; */
+  block-size: 19.81rem;
+  inline-size: 78.57rem;
+  width: 100%;
+}
+
+.searchSpotifu-component1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  inline-size: 20.25rem;
+  block-size: 9.5rem;
+  align-items: center;
+  /* margin-block-start: 4.44rem;
+  margin-block-end: 1rem;
+  margin-inline-end: 25rem;
+  margin-inline-start: 25rem; */
+}
+
+.searchSpotifu-component {
+  display: flex;
+  flex-direction: row;
+  inline-size: 39.9rem;
+  block-size: 11.27rem;
+  margin-inline-start: 1.3rem;
+}
+
+.searchSpotifu-component img {
+  margin-inline-end: 1.5rem;
+  inline-size: 19.5rem;
+  block-size: 11.44rem;
+}
+
+.searchSpotifu-title {
+  font: var(--headLine1);
+  color: var(--white);
+  margin-block-start: 0;
+}
+
+.searchSpotifu-subtitle {
+  text-align: center;
+  font: var(--baseFont);
+  color: var(--white);
+}
+
+.searchSpotifu-reproduce {
+  margin-inline-start: 5.34rem;
+  margin-inline-end: 5.34rem;
+  block-size: 2rem;
+  inline-size: 9.56rem;
+  border-radius: 4.375rem;
+  background: var(--primary);
+  color: var(--white);
+  opacity: 0.8;
+  transition: 0.5s;
+  border: none;
+}
+
+.searchSpotifu-reproduce:active {
+  transform: scale(0.95);
+}
+
+.searchSpotifu-reproduce:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.searchSpotifu-filter input {
+  font: var(--button);
+  color: var(--gray10);
+  background: none;
+  border: none;
+  width: 100%;
+  padding: 0.5rem;
+  padding-inline-start: 2rem;
+}
+
+.searchSpotifu-filter {
+  position: relative;
+  flex: 1;
+  inline-size: 69.31rem;
+  margin-inline-start: 0.5rem;
+  /* margin-inline-end: 0.5rem; */
+}
+
+.searchSpotifu-filter i {
+  position: absolute;
+  font-size: 1rem;
+  block-size: 1rem;
+  left: 0.5rem;
+  top: calc(50% - 0.5rem);
+  color: var(--gray20);
+}
+
+.searchSpotifu-filter:focus-within i {
+  color: var(--white);
+  opacity: 0.6;
+}
+
+.searchSpotifu-filter input::-webkit-input-placeholder {
+  color: var(--gray20);
+}
+
+.searchSpotifu-row {
+  display: flex;
+  margin-inline-start: 0.5rem;
+  /* margin-inline-end: -1.5rem; */
+  inline-size: 68.31rem;
+  block-size: 2.75rem;
+}
+.searchSpotifu-top1 {
+  display: flex;
+  inline-size: 54.63rem;
+  justify-content: space-around;
+  align-items: center;
+  /* padding-inline-start: 5.125rem; */
+}
+.searchSpotifu-top1 .top1Artist {
+  padding-inline-start: 3.8rem;
+}
+
+.searchSpotifu-top1 .top1title {
+  padding-inline-start: 0.5rem;
+}
+
+.searchSpotifu-top1 h3 {
+  margin: 0;
+  font: var(--basefontFamily);
+  color: var(--gray10);
+  margin-inline-start: -3.2rem;
+}
+
+.searchSpotifu-top2 {
+  display: flex;
+  inline-size: 13.69rem;
+  justify-content: space-evenly;
+}
+
+.searchSpotifu-top2 h2 {
+  margin-inline-start: 4rem;
+}
+
+.searchSpotifu-top3 {
+  display: flex;
+  inline-size: 13.69rem;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.searchSpotifu-top3 h3 {
+  margin: 0;
+  margin-inline-start: 2rem;
+  font: var(----baseFont);
+  color: var(--gray10);
+}
+
+.searchSpotifu-top3 .top3H3 {
+  margin: 0;
+  margin-inline-start: 4.5rem;
+  font: var(----baseFont);
+  color: var(--gray10);
+}
+
+.searchSpotifu-top4 .buttonIcon {
+  inline-size: 1.5rem;
+  block-size: 1.5rem;
+  font-size: 0.5rem;
+  border: 0.5px solid var(--gray10);
+  color: var(--white);
+}
+
+.searchSpotifu-top4 .icon-heart {
+  color: var(--white);
+}
+
+.searchSpotifu-top4 {
+  display: flex;
+  inline-size: 5.125rem;
+  align-items: center;
+  justify-content: space-evenly;
+  /* gap: 0.63rem; */
+}
+
+.searchSpotifu-top5 {
+  display: flex;
+  inline-size: 49.5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.searchSpotifu-top5 h3 {
+  margin: 0;
+  font: var(--basefontFamily);
+  color: var(--white);
+  padding-inline-start: 0.63rem;
+  padding-inline-end: 5rem;
+}
+
+.top5Span {
+  display: flex;
+  justify-content: space-around;
+  font: var(--basefontFamily);
+  color: var(--white);
+  inline-size: 34.25rem;
+}
+
+.layout-main {
+  margin-inline-end: -1rem;
+  block-size: calc(100vh - var(--bottomSize));
+  overflow: auto;
+  min-block-size: var(--minBlockSize);
+  inline-size: 78.57rem;
+  width: 100%;
+}
+
+.searchSpotifu-filter1 {
+  inline-size: 78.57rem;
+}
